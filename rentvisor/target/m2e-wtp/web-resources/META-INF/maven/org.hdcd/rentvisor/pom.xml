@@ -9,10 +9,10 @@
 		<relativePath/>
 	</parent>
 	<groupId>org.hdcd</groupId>
-	<artifactId>ch2331</artifactId>
+	<artifactId>rentvisor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>ch2331</name>
+	<name>rentvisor</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
