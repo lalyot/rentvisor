@@ -20,6 +20,6 @@ rentvisor는 대여를 뜻하는 rental과 조언자를 뜻하는 Advisor를 합
 2022-08-30 ~ 2022-10-07 / 4명
 
 ## 사용한 기술
-*spring boot
-*spring security
-*mybatis
+* spring boot
+* spring security
+* mybatis
