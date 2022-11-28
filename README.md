@@ -23,3 +23,19 @@ rentvisor는 대여를 뜻하는 rental과 조언자를 뜻하는 Advisor를 합
 * spring boot
 * spring security
 * mybatis
+
+## 핵심 기능
+* 물품 대여
+* 사용후기 작성 + 댓글
+
+## 느낀점
+* 한가지 기능 구현에 너무 정신이 집중되어 디테일한 것에 신경쓰지 못했던 것 같습니다.
+* 구현하고자 하는 기능을 다 담지 못하고 꾸준히 진행 중입니다.
+* 잘 구현되지 않을 때는 다른것에 잠시 눈돌리는 것이 기분과 효율성이 좋아지는 것을 깨달았습니다.
+
+## 주 구현 코드
+```bash
+git commit -m 'initial project'
+git push - u origin master
+```
+
