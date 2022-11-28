@@ -35,7 +35,28 @@ rentvisor는 대여를 뜻하는 rental과 조언자를 뜻하는 Advisor를 합
 
 ## 주 구현 코드
 ```bash
-git commit -m 'initial project'
-git push - u origin master
+$("#addComment").on("click",function(){
+				var boardNO = $("#boardNo").val();
+				var contents = $("#con").val();
+				$.ajax({
+				type:"GET",
+				async:"true",
+				url:"/comment/add/"+boardNO,
+				data:{content:contents},
+				success:function(data){
+				var output="";
+				for(var i in data){
+				output +="<p>"+data[i].userId+"</p>";
+				output +="<p class=comment_content>"+data[i].content+"</p>";
+				output +="<p>"+data[i].writeDate+"</p>";
+				output +="<button class=btn_down_level_comment onClick=plusPlus("+data[i].commentId+")>답글</button>";
+				output +="<hr class=stroke_comment_content/>";
+				output +="<div id=comment_content_box"+data[i].commentId+">";
+				output +="</div>";
+				}
+				$("#comment_box").html(output);
+				}
+				});
+			});
 ```
 
